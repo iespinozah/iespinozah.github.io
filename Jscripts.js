@@ -1,1 +1,7 @@
-<script src="https://kit.fontawesome.com/9bcd5a3b4b.js" crossorigin="anonymous"></script>
+const boton = document.querySelector('#botoncito');
+console.log("hola");
+
+const crearusuario=() =>{
+    console.log("generando usuario");
+}
+boton.addEventListener('click', crearusuario);

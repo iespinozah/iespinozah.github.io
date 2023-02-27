@@ -12,6 +12,59 @@ html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
+  #sobremi{
+    
+    border-style: double;
+    border-color: #27dd4e;
+    padding: 20px;
+    background-color: rgb(184, 181, 181);
+    
+  }
+
+  #experiencia{
+    border-style: dotted;
+    border-color: #0a3fee;
+    padding: 20px;
+    background-color: gray;
+  }
+
+  #habilidades{
+    border-style: groove;
+    border-color: #e27f0d;
+    padding: 20px;
+    background-color: #5d5e5d;
+  }
+
+  #formacion{
+    border-style: dashed;
+    border-color: #eb09eb;
+    padding: 20px;
+
+  }
+
+  #cab-cont{
+    background: #FFFBB9;
+    border: 2px solid #0a3fee;
+    padding: 10px;
+    display:flex;
+    align-items:center;
+    display: flex ;
+  }
+
+  .foto{
+    width: 150px;
+    height: 150px;
+     border: 2px solid #ee930a;
+     margin: none;
+  }
+
+  #nombre{
+    flex-grow:1;
+    text-align:center;
+   }
+
+  
+
   nav {
     width: 100%;
     background-color: steelblue;
@@ -54,3 +107,22 @@ html {
     width: 175px;
     vertical-align: middle;
   }
+  .boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    border: none;
+    background: linear-gradient(to right, rgb(14, 67, 174), rgb(7, 94, 224));
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all ease 400ms;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
