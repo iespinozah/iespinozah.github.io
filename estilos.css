@@ -14,37 +14,30 @@ html {
   
   #sobremi {
     
-    border-style: double;
-    border-color: #27dd4e;
     padding: 20px;
     background-color: rgb(184, 181, 181);
     
   }
 
   #experiencia{
-    border-style: dotted;
-    border-color: #0a3fee;
     padding: 20px;
     background-color: gray;
   }
 
   #habilidades{
-    border-style: groove;
-    border-color: #e27f0d;
     padding: 20px;
-    background-color: #5d5e5d;
+    background-color: #708070;
   }
 
   #formacion{
-    border-style: dashed;
-    border-color: #eb09eb;
+   background-color: #232f99;
     padding: 20px;
 
   }
 
   #cab-cont{
-    background: #0cdd40;
-    border: 2px solid #0a3fee;
+    background: #959795;
+    border: 2px solid #213063;
     padding: 10px;
     display:flex;
     align-items:center;
@@ -54,24 +47,26 @@ html {
   #foto{
     width: 150px;
     height: 150px;
-     border: 2px solid #ee930a;
+     border: 2px solid #aaaaaa;
      margin: none;
   }
 
   #nombre{
+    flex-grow: 1;
+    text-align:center;
+    color: #000000;
+    font-size: 80px;
+    font-weight: bolder;
+   }
+
+   #h2 #nombre{
     flex-grow:1;
     text-align:center;
-    color: #ee2005;
+    color: #232f99;
     font-size: x-large;
     font-weight: bolder;
    }
 
-   #apellido{
-    flex-grow:1;
-    text-align:center;
-   }
-
-  
 
   nav {
     width: 100%;
