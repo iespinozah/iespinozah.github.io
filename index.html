@@ -7,7 +7,26 @@
     <title>Proyecto TICMAS - Mi CV</title>
     <link rel="stylesheet" href="/estilos.css">
     <script src="https://kit.fontawesome.com/9bcd5a3b4b.js" crossorigin="anonymous"></script>
-   
+    <button class="open-button" onclick="openForm()">Contáctame</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+          <h1>Deja tus datos</h1>
+      
+          <label for="nomb"><b>Nombre/Empresa</b></label>
+          <input type="text" placeholder="Ingresa tu nombre" name="nomb" required>
+          
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Escribe tu Email" name="email" required>
+      
+          <label for="telf"><b>Teléfono</b></label>
+          <input type="tel" placeholder="Teléfono" name="telf" required>
+          
+      
+          <button type="submit" class="btn" onclick="getData()">Enviar datos</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Cancelar</button>
+        </form>
+    </div>
 
 </head>
 <body>
@@ -31,7 +50,7 @@
     
         <section id="sobremi" >
        
-            <h2>Nombre: <span id="nombre"></span></h2>
+            <h2>Ingeniero de sistemas</h2>
             <br>
             <h2>Correo: <span id="correo"></span></h2>
             <br>
@@ -42,35 +61,59 @@
         </section> 
  
         <section id="formacion" style="display: none;" >
-            <h3>Licenciatura: </h3>
+            <h3>Licenciatura: Ingeniero de Sistemas </h3>
             <br>
-            <h3>Universidad: </h3>
+            <h3>Universidad: Universidad de Buenos Aires</h3>
             <br>
-            <h3>Cursos y Talleres: </h3>       
+            <h3>Cursos y Talleres: </h3> 
+            <p>-Metodologías Ágiles - Universidad de Palermo</p> 
+            <p>-Programación en HTML - TICMAS</p>
+            <p>-Habilidades Blandas - Universidad de Buenos Aires</p>
+                 
         </section>
 
     <section id="habilidades" style="display: none;">
-        <h3>Blandas: </h3>
+        <h2>Blandas: </h2>
+        <p>-Trabajo en equipo</p>
+        <p>-Comunicación efectiva</p>
+        <p>-Habilidades interpersonales</p>
         <br>
-        <h3>Conocimientos técnicos: </h3>
+        <h2>Conocimientos técnicos: </h2>
+        <p>-Microsoft: Nivel Intermedio</p>
+        <p>-CISCO: CCNA Nivel 2</p>
         <br>
-        <h3>Idiomas: </h3>
-        <br>
-        <h3>Extracurriculares : </h3>       
+        <h2>Idiomas: </h2>
+        <p>-Inglés: Avanzado </p>
+        <p>-Portugués: Intermedio</p>
+        <p>-Francés: Intermedio</p>
+        <p>-Alemán: Básico</p>    
+             
     </section>
     <section id="experiencia"style="display: none;">
-        <h3>Más reciente: </h3>
+        <h3>Más reciente: Inversiones Educativas SMA</h3>
+        <P>Encargada de Sistemas</P>
         <br>   
-        <h3>Pasantía: </h3>
+        <h3>Pasantía: Tekton Labs</h3>
+        <p>Junior Account Manager</p>
         <br>
-        <h3>Part Time: </h3>
+
+        <h3>Voluntariado: </h3>
+        <P>→Global Vision Canada <a href="http://www.globalvision.ca/">Conoce más</a></P>
+        <P>→USIL Ambassadors <a href="https://www.facebook.com/USILAmbassadors/">Conoce más</a> </P>
+        <P>→HAZla Perú <a href="https://hazla.pe/">Conoce más</a> </P>
         <br> 
     </section>
     <div class="boton">
         <button id="botoncito">Cambiar de nombre</button>
     </div>
 
-<script src="/Jscripts.js"></script>
+
+
+
+    <script src="/Jscripts.js"></script>
+
 </body>
-    <h6 style="">Elaborado por: Isabel Espinoza</h6>
+
+
+    <h6 >Elaborado por: Isabel Espinoza</h6>
 </html>

@@ -21,16 +21,16 @@ html {
 
   #experiencia{
     padding: 20px;
-    background-color: gray;
+    background-color: rgb(150, 144, 144);
   }
 
   #habilidades{
     padding: 20px;
-    background-color: #708070;
+    background-color: #a8b4a8;
   }
 
   #formacion{
-   background-color: #232f99;
+   background-color: #e2eafa;
     padding: 20px;
 
   }
@@ -92,6 +92,7 @@ html {
     color: transparent; /*quitar color a las viñetas de la lista*/
   }
   
+
   .nav-item:hover {
     background-color: white;
   }
@@ -110,7 +111,7 @@ html {
     margin-top: 30px;
 }
 
-button {
+#botoncito {
     border: none;
     background: linear-gradient(to right, rgb(14, 67, 174), rgb(7, 94, 224));
     color: #fff;
@@ -122,4 +123,80 @@ button {
 
 button:hover {
     transform: scale(1.1);
+}
+
+p {
+  font-size: large;
+  font-weight: bold;
+  margin-left: auto;
+  margin-inline: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #17700f;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus, .form-container input[type=tel]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #2eca6a;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
 }

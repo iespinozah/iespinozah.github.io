@@ -4,8 +4,15 @@ const nombre = document.querySelector('#nombre');
 const apellido = document.querySelector('#apellido');
 const correo = document.querySelector('#correo');
 const telefono = document.querySelector('#telefono');
-console.log("hola");
-console.log("hola");
+
+var getData = function(){
+    var nomb = document.getElementById("nomb").value;
+    var telf = document.getElementById("telf").value;
+    var email = document.getElementById("email").value;
+    console.log (nomb, ", ", telf, ", ", email);
+}
+    
+console.log("hola, probando el JS");
 const crearusuario = async() =>{
     const url ='https://randomuser.me/api/';
     const rpta= await fetch(url);
@@ -33,6 +40,7 @@ document.getElementById("forma").addEventListener('click', function(){
     document.getElementById("habilidades").style.display="none";
 });
 
+
 document.getElementById("xper").addEventListener('click', function(){
     document.getElementById("sobremi").style.display="none";
     document.getElementById("formacion").style.display="none";
@@ -47,4 +55,10 @@ document.getElementById("habil").addEventListener('click', function(){
     document.getElementById("habilidades").style.display="block";
 });
 
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
 
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
